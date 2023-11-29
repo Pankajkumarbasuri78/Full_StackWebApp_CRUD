@@ -5,6 +5,7 @@ import StudentsView from "./component/student/StudentsView";
 import NavBar from "./component/common/NavBar";
 import { Routes, Route } from "react-router-dom";
 import AddStudent from "./component/student/AddStudent";
+import EditStudent from "./component/student/EditStudent";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/view-students" element={<StudentsView />} />
         <Route path="/add-students"element={<AddStudent/>}/>
+        <Route path="/edit-student/:id" element={<EditStudent/>}/>
       </Routes>
     </>
   );

@@ -49,7 +49,7 @@ public class MyController {
     @GetMapping("/getStudentById/{id}")
     public Student getStudentById(@PathVariable Long id) {
         return studentService.getStudentById(id);
-    }
+    } 
 
     // @DeleteMapping("/deleteStudent/{id}")
     // public void deleteStudent(@PathVariable Long id)

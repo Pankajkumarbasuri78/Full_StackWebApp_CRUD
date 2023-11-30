@@ -6,6 +6,7 @@ import NavBar from "./component/common/NavBar";
 import { Routes, Route } from "react-router-dom";
 import AddStudent from "./component/student/AddStudent";
 import EditStudent from "./component/student/EditStudent";
+import StudentProfile from "./component/student/StudentProfile";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/view-students" element={<StudentsView />} />
         <Route path="/add-students"element={<AddStudent/>}/>
         <Route path="/edit-student/:id" element={<EditStudent/>}/>
+        <Route path="/student-profile/:id" element={<StudentProfile/>}/>
       </Routes>
     </>
   );

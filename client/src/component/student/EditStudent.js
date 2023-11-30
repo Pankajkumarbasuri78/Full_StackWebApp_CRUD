@@ -6,6 +6,7 @@ const EditStudent = () => {
     let navigate = useNavigate();
 
     const {id} = useParams();
+    //console.log(id);
 
     const [student, setStudent] = useState({
           firstName: "",

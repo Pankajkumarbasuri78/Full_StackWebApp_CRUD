@@ -30,7 +30,7 @@ const AddStudent = () => {
 
   const saveStudent = async (e) => {
 		e.preventDefault();
-		await axios.post("http://localhost:8080/students/addStudent", student);
+		await axios.post("http://localhost:8080/students/addStudent",student);
 		navigate("/view-students");
 	};
 
